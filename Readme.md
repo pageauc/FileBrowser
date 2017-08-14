@@ -3,8 +3,10 @@
 
 ### Description
 
-This is a whiptail file browser that allows navigating through a directory
-structure and select a file. It Returns a filename if selected.  
+This is sample bash code for a whiptail file browser that allows navigating through a directory
+structure and selecting a file. It Returns a filename and path if a file is selected.
+You can also specify a file extension.  The sample uses jpg.
+  
 This sample code can be used in a script menu to perform an operation that requires selecting
 a file.
 
