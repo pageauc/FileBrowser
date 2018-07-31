@@ -14,12 +14,13 @@ See Github [FileBrowser](https://github.com/pageauc/FileBrowser) project
 ## Description
 This is sample bash code for a whiptail file browser that allows navigating
 through a directory a structure. If a file matching the filext variable file type is selected
-it will Return the filename and path of the selected file. This can be used to in your code
-for further processing.
+it will Return the filename and path of the selected file. This can be used in your code
+to do further processing.
 Note The sample defaults to jpg file extension but this can be 
-customize per your requirements.
+customize per your requirements using filext variable.
   
-This Demo whiptail filebrowse menu code can be used in your own bash scripts.
+This Demo whiptail demo can be used in your own bash scripts
+per the filebrowse.sh example code.
 
 ![filebrowse.sh menu](https://github.com/pageauc/FileBrowser/blob/master/filebrowse.png) 
 
