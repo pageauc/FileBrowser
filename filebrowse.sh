@@ -1,14 +1,19 @@
 #!/bin/bash
 
 : '
-                   FileBrowser written by Claude Pageau
+                   filebrowse.sh written by Claude Pageau
 
-This is a whiptail file browser that allows navigating through a directory
-structure and select a file. It Returns a filename if selected.  
+This is a whiptail file browser demo that allows navigating through a directory
+structure and select a specified file type per filext variable.
+It Returns a filename path if selected.  Esc key exits.
 This sample code can be used in a script menu to perform an operation that
 requires selecting a file.
 
 '
+
+startdir="/home/pi"
+filext='jpg'
+menutitle="$filext File Selection Menu"
 
 #------------------------------------------------------------------------------
 function Filebrowser()
@@ -67,9 +72,6 @@ function Filebrowser()
     fi
 }
 
-menutitle="File Selection Menu"
-startdir="/home/pi"
-filext='jpg'
 
 Filebrowser "$menutitle" "$startdir"
 
@@ -84,11 +86,11 @@ if [ $exitstatus -eq 0 ]; then
 
         Filename : $filename
         Directory: $filepath
- 
+
         \
         " 0 0 0
         echo "Perform an operation with this"
-        echo "filepath $filepath/$filename" 
+        echo "filepath $filepath/$filename"
     fi
 else
     echo "User Pressed Cancel. with No File Selected"
