@@ -89,10 +89,22 @@ if [ $exitstatus -eq 0 ]; then
 
         \
         " 0 0 0
-        echo "Perform an operation with this"
-        echo "filepath $filepath/$filename"
+        echo ""
+        echo "---- $0 variable output values -----"
+        echo ""
+        echo '$filename = '$filename
+        echo '$filepath = '$filepath
+        echo ""
+        echo "You can combine variables per"
+        echo 'echo $filepath/$filename'
+        echo "result is"
+        echo "$filepath/$filename"
+        echo ""
+        echo "Variables can be used in command execution"
     fi
 else
-    echo "User Pressed Cancel. with No File Selected"
+    echo "User Pressed Cancel. with No File Selected."
 fi
+echo ""
+echo "This is demo code that can be used in your own projects"
 
