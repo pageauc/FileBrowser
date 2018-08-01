@@ -22,6 +22,17 @@ customize per your requirements using filext variable.
 This Demo whiptail demo can be used in your own bash scripts
 per the filebrowse.sh example code.
 
+The variables returned from the FileBrowser() function are
+
+    Filename : $filename
+    Directory: $filepath
+    
+You can perform commands on
+
+* Just file name eg. cp $filename $filename.bak
+* Just directory path  eg. mv $filepath $filepath_prev
+* Both for full file path eg. rm $filepath/$filename   
+
 ![filebrowse.sh menu](https://github.com/pageauc/FileBrowser/blob/master/filebrowse.png) 
 
 ## How to Customize
