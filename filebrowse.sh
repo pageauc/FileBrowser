@@ -58,9 +58,9 @@ function Filebrowser()
             else
                 Filebrowser "$1" "$curdir"
             fi
-          else   # Not jpg so Inform User and restart
-             whiptail --title "ERROR: File Must have .jpg Extension" \
-                      --msgbox "$selection\nYou Must Select a jpg Image File" 0 0
+          else   # Not correct extension so Inform User and restart
+             whiptail --title "ERROR: File Must have $filext Extension" \
+                      --msgbox "$selection\nYou Must Select a $filext file" 0 0
              Filebrowser "$1" "$curdir"
           fi
        else
